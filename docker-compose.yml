@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  codepay_api:
+    container_name: "codepay_api"
+    build:
+      dockerfile: Dockerfile
+      context: ./
+    ports:
+      - "8000:8000"
